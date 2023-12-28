@@ -1,0 +1,53 @@
+{
+  "id": "dc4212ed-c8f1-4400-985a-65fd69aaea49",
+  "version": "2.0",
+  "name": "inserir",
+  "url": "http://192.168.0.106:8080",
+  "tests": [{
+    "id": "62cdf597-b200-4006-b336-84e5044a2111",
+    "name": "inserir",
+    "commands": [{
+      "id": "5c67b881-29ff-43c8-8496-16aee16724e5",
+      "comment": "",
+      "command": "open",
+      "target": "chrome-extension://mooikfkahbdckldjjndioackbalphokd/bootstrap.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7be83e2-be52-421f-bc3e-96c6d758331a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf77d1e3-4fa9-4686-aed7-16f0ec7ef803",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Preparing to run your test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3a914d-8af4-4382-992f-9233bb542365",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2bf3bfef-494f-4e8e-b73d-fbcf57de529b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["62cdf597-b200-4006-b336-84e5044a2111"]
+  }],
+  "urls": ["http://192.168.0.106:8080/"],
+  "plugins": []
+}

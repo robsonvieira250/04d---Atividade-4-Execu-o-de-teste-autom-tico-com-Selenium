@@ -1,0 +1,125 @@
+{
+  "id": "1d6cd23d-47ec-46a6-b42c-8e5372c5ad0d",
+  "version": "2.0",
+  "name": "EDITAR",
+  "url": "http://192.168.0.106:8080",
+  "tests": [{
+    "id": "8fe6ac44-b284-46d1-8257-01fba87f6995",
+    "name": "EDITAR",
+    "commands": [{
+      "id": "0fd133cb-5cf2-47f0-a38f-1d607e52e8ed",
+      "comment": "",
+      "command": "open",
+      "target": "/listar",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d844e46-2249-4f1d-887b-517847c526de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1520x804",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e2c207d-24de-4ad1-acee-fa944efe8688",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused > .mdc-button__label",
+      "targets": [
+        ["css=.cdk-focused > .mdc-button__label", "css:finder"],
+        ["xpath=//tr[3]/td[3]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba0906c8-3299-4f2a-bf87-b32f2771c585",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=div:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b68cf44a-3eb7-48fd-98b0-6b610a71a596",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d81ca19-f0a1-4872-880c-8b47b088b98c",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=div > .ng-dirty", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "MATEUS"
+    }, {
+      "id": "dfb44ed5-8096-475c-9353-3252e95e87d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a5d0667-c054-4828-9579-04698d794cfd",
+      "comment": "",
+      "command": "type",
+      "target": "name=endereco",
+      "targets": [
+        ["name=endereco", "name"],
+        ["css=div:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='endereco']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "RUA DAS ILUSOES"
+    }, {
+      "id": "4f7160bf-0691-490c-be1c-144f30eaa78f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atualizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d097fdb3-f356-46b4-8a7d-d94fbf2876da",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atualizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56e7d4a9-9898-410f-a30a-a76ae4d5d696",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fe6ac44-b284-46d1-8257-01fba87f6995"]
+  }],
+  "urls": ["http://192.168.0.106:8080/"],
+  "plugins": []
+}
